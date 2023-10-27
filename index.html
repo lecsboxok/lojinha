@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iiiii</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c93f4c944c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo"><h1 class="logo-nome">iiiii</h1></div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="nome">
+                <h2 class="nome-secao">Meus Produtos:</h2>
+            </div>
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/cavaquinho.jpg" alt="cavaquinho">
+                        </div>
+                        <div class="infos">
+                            <h3>Cavaquinho</h3>
+                            <p>R$100.00</p>
+                            <button onclick="addCarrinho('Cavaquinho', 100.00)">Adicionar ao Botão</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/pandeiro.jpg" alt="pandeiro">
+                        </div>
+                        <div class="infos">
+                            <h3>Pandeiro</h3>
+                            <p>R$110.00</p>
+                            <button onclick="addCarrinho('Pandeiro', 110.00)">Adicionar ao Botão</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/saxofone.jpg" alt="saxofone">
+                        </div>
+                        <div class="infos">
+                            <h3>Saxofone</h3>
+                            <p>R$120.00</p>
+                            <button onclick="addCarrinho('Saxofone', 120.00)">Adicionar ao Botão</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/teclado.jpg" alt="teclado">
+                        </div>
+                        <div class="infos">
+                            <h3>Teclado</h3>
+                            <p>R$130.00</p>
+                            <button onclick="addCarrinho('Teclado', 130.00)">Adicionar ao Botão</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/violao.jpg" alt="violão">
+                        </div>
+                        <div class="infos">
+                            <h3>Violão</h3>
+                            <p>R$140.00</p>
+                            <button onclick="addCarrinho('Violão', 140.00)">Adicionar ao Botão</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/violino.jpg" alt="violino">
+                        </div>
+                        <div class="infos">
+                            <h3>Violino</h3>
+                            <p>R$150.00</p>
+                            <button onclick="addCarrinho('Violino', 150.00)">Adicionar ao Botão</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 100px;
+    display: flex;
+}
+
+#header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main .container {
+    flex-direction: column;
+}
+
+.produto-linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border: 2px solid black;
+    padding: 5px 7px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+#carrinho-icon i {
+    font-size: 50px;
+}
+
+#carrinho-icon{
+    display: flex;
+}
+
+.produto img{
+    height: 200px;
+}
