@@ -31,6 +31,12 @@ function addCarrinho(itemNome, itemPreco) {
             liItem: liItem
         }
     }
+
+    let precoTotal = 0
+    for(let itemNome in itensCarrinho) {
+        precoTotal += itensCarrinho[itemNome].precoTotal
+    }
+
     //Atualiza o valor total
     document.getElementById("preco-total").innerHTML = "Total R$"+precoTotal.toFixed(2)
     updateCarrinho()
@@ -58,4 +64,39 @@ function updateCarrinho(){
         cont+= itensCarrinho[item].quantidade
     }
     document.getElementById("cont-carrinho").innerHTML = cont
+}
+
+function limparCarrinho () {
+    document.getElementById("itens-lista").innerHTML = ""
+    document.getElementById("preco-total").innerHTML = "Valor: R$0.00"
+
+    for (let itemNome in itensCarrinho) {
+        delete itensCarrinho[itemNome]
+    }
+    updateCarrinho()
+}
+
+function toggleCarrinho () {
+    const itensCarrinhoDiv = document.getElementById("carrinho-itens")
+    if(itensCarrinhoDiv.style.display === "none") {
+        itensCarrinhoDiv.style.display = "block"
+    } else {
+        itensCarrinhoDiv.style.display = "none"
+    }
+}
+
+function buscarProduto() {
+    const buscarInput = document.getElementById("buscar-input")
+    const produto = document.getElementsByClassName("produto")
+
+    for(let i = 0; i<produto.length; i++){
+        const produtoNome = produto[i].querySelector("h3").innerText.toLowerCase()
+
+        if(produtoNome.includes(buscarInput.value.toLowerCase())) {
+            produto[i].style.display = "block"
+        } else {
+            produto[i].style.display = "none"
+        }
+    }
+
 }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iiiii</title>
+    <title>Musical Store</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c93f4c944c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
         <div class="container">
-            <div class="logo"><h1 class="logo-nome">iiiii</h1></div>
+            <div class="logo"><h1 class="logo-nome">Musical Store</h1></div>
             <div id="buscar">
                 <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
                 <button onclick="buscarSite()">Buscar</button>
@@ -19,7 +19,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span id="cont-carrinho">0</span>
             </div>
-            <div id="carrinho-itens">
+            <div id="carrinho-itens" style="display: none;">
                 <ul id="itens-lista"></ul>
                 <span id="preco-total">Total: R$0,00</span>
                 <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
@@ -35,7 +35,7 @@
                 <div class="produto-linha">
                     <div class="produto">
                         <div class="imagem">
-                            <img src="img/cavaquinho.jpg" alt="cavaquinho">
+                            <img src="img/cavaquinho.png" alt="cavaquinho">
                         </div>
                         <div class="infos">
                             <h3>Cavaquinho</h3>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="produto">
                         <div class="imagem">
-                            <img src="img/pandeiro.jpg" alt="pandeiro">
+                            <img src="img/pandeiro.png" alt="pandeiro">
                         </div>
                         <div class="infos">
                             <h3>Pandeiro</h3>
