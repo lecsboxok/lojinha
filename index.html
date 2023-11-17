@@ -12,11 +12,13 @@
         <div class="container">
             <div class="logo"><h1 class="logo-nome">Musical Store</h1></div>
             <div id="buscar">
+                <button onclick="buscarSite()"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
-                <button onclick="buscarSite()">Buscar</button>
             </div>
             <div id="carrinho-icon" onclick="toggleCarrinho()">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="imgCarrinho">
+                    <img src="img/cesta.png" alt="">
+                </div>
                 <span id="cont-carrinho">0</span>
             </div>
             <div id="carrinho-itens" style="display: none;">
@@ -40,7 +42,7 @@
                         <div class="infos">
                             <h3>Cavaquinho</h3>
                             <p>R$100.00</p>
-                            <button onclick="addCarrinho('Cavaquinho', 100.00)">Adicionar ao Botão</button>
+                            <button onclick="addCarrinho('Cavaquinho', 100.00)">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                     <div class="produto">
@@ -50,7 +52,7 @@
                         <div class="infos">
                             <h3>Pandeiro</h3>
                             <p>R$110.00</p>
-                            <button onclick="addCarrinho('Pandeiro', 110.00)">Adicionar ao Botão</button>
+                            <button onclick="addCarrinho('Pandeiro', 110.00)">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                     <div class="produto">
@@ -60,7 +62,7 @@
                         <div class="infos">
                             <h3>Saxofone</h3>
                             <p>R$120.00</p>
-                            <button onclick="addCarrinho('Saxofone', 120.00)">Adicionar ao Botão</button>
+                            <button onclick="addCarrinho('Saxofone', 120.00)">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +74,7 @@
                         <div class="infos">
                             <h3>Teclado</h3>
                             <p>R$130.00</p>
-                            <button onclick="addCarrinho('Teclado', 130.00)">Adicionar ao Botão</button>
+                            <button onclick="addCarrinho('Teclado', 130.00)">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                     <div class="produto">
@@ -82,7 +84,7 @@
                         <div class="infos">
                             <h3>Violão</h3>
                             <p>R$140.00</p>
-                            <button onclick="addCarrinho('Violão', 140.00)">Adicionar ao Botão</button>
+                            <button onclick="addCarrinho('Violão', 140.00)">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                     <div class="produto">
@@ -92,7 +94,7 @@
                         <div class="infos">
                             <h3>Violino</h3>
                             <p>R$150.00</p>
-                            <button onclick="addCarrinho('Violino', 150.00)">Adicionar ao Botão</button>
+                            <button onclick="addCarrinho('Violino', 150.00)">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
